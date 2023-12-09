@@ -10,7 +10,7 @@ import (
 func TestInstallCompletion(t *testing.T) {
 	tests := map[string]string{
 		"zsh":  "autoload -U +X bashcompinit && bashcompinit\ncomplete -C /usr/bin/docker docker\n",
-		"bash": "complete -C /usr/bin/docker docker\n",
+		"bash": "complete -o default -o bashdefault -C /usr/bin/docker -X '!&*' docker\n",
 		"fish": `function __complete_docker
     set -lx COMP_LINE (commandline -cp)
     test -z (commandline -ct)

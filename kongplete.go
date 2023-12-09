@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	"github.com/alecthomas/kong"
+	"github.com/danpadcz/kongplete/internal/positionalpredictor"
 	"github.com/posener/complete"
-	"github.com/willabides/kongplete/internal/positionalpredictor"
 )
 
 const predictorTag = "predictor"

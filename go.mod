@@ -1,4 +1,4 @@
-module github.com/willabides/kongplete
+module github.com/danpadcz/kongplete
 
 go 1.17
 

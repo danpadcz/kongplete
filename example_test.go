@@ -7,8 +7,8 @@ import (
 	"os"
 
 	"github.com/alecthomas/kong"
+	"github.com/danpadcz/kongplete"
 	"github.com/posener/complete"
-	"github.com/willabides/kongplete"
 )
 
 var shellCli struct {

@@ -26,7 +26,7 @@ func (c *InstallCompletions) BeforeApply(ctx *kong.Context) error {
 }
 
 var shellInstall = map[string]string{
-	"bash": "complete -C ${bin} ${cmd}\n",
+	"bash": "complete -o default -o bashdefault -C ${bin} -X '!&*' ${cmd}\n",
 	"zsh": `autoload -U +X bashcompinit && bashcompinit
 complete -C ${bin} ${cmd}
 `,
